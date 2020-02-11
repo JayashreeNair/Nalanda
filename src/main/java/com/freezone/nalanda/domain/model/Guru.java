@@ -1,12 +1,17 @@
-package com.freezone.nalanda.domain;
+package com.freezone.nalanda.domain.model;
 
+import com.googlecode.jmapper.annotations.JMap;
 import lombok.Getter;
+
+import java.util.Set;
 
 @Getter
 public class Guru extends User {
-    private Subject classes[];
 
-    public void teaches(Subject classes[]) {
+    @JMap
+    private Set<Subject> classes;
+
+    public void teaches(Set<Subject> classes) {
         this.classes = classes;
     }
 

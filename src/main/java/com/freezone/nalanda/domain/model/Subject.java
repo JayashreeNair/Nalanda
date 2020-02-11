@@ -1,4 +1,4 @@
-package com.freezone.nalanda.domain;
+package com.freezone.nalanda.domain.model;
 
 import lombok.Getter;
 
