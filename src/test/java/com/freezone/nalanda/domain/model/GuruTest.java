@@ -10,17 +10,15 @@ class GuruTest {
 
     @Test
     public void test1() {
-        Guru.GuruBuilder guruBuilder = new Guru.GuruBuilder();
-        Guru instance = guruBuilder
-                .FirstName("firstName")
-                .MiddleName("")
-                .LastName("LastName")
-                .build();
+        Guru instance = new Guru();
+        instance.setFName("firstName");
+        instance.setMName("");
+        instance.setLName("LastName");
 
         assertNotNull(instance);
-        assertEquals(instance.getFName(),"firstName");
-        assertEquals(instance.getMName(),"");
-        assertEquals(instance.getLName(),"LastName");
+        assertEquals(instance.getFName(), "firstName");
+        assertEquals(instance.getMName(), "");
+        assertEquals(instance.getLName(), "LastName");
     }
 
 }

@@ -1,6 +1,5 @@
 package com.freezone.nalanda.domain.model;
 
-import com.freezone.nalanda.domain.model.Subject;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
