@@ -16,6 +16,12 @@ public class User {
     private Long id;
 
     @Column()
+    private String userName;
+
+    @Column()
+    private String password;
+
+    @Column()
     private String firstName;
 
     @Column()

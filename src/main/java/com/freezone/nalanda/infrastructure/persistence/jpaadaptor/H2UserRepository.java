@@ -48,4 +48,12 @@ public class H2UserRepository implements PersistenceOperations<User> {
     public void delete(String id) {
 
     }
+
+    public User findByUserNameAndPassword(String username,String password){
+        return InfrastructureModelToDomainModelTransformer.transform.apply((this.repository.findByUserNameAndPassword(username,password)));
+    }
+
+    public User findByUserName(String username) {
+        return InfrastructureModelToDomainModelTransformer.transform.apply(this.repository.findByUserName(username));
+    }
 }
